@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import shortid from 'shortid';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import ContactsList from './components/ContactsList/ContactsList';
-import ContactForm from './components/ContactForm/ContactForm';
-import Filter from './components/Filter/Filter';
+import ContactsList from './ContactsList/ContactsList';
+import ContactForm from './ContactForm/ContactForm';
+import Filter from './Filter/Filter';
 
 function App() {
   const [contacts, setContacts] = useState(() => {
