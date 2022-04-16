@@ -1,11 +1,11 @@
 import React from 'react';
 import ContactsListItem from '../ContactsListItem/ContactsListItem';
-import css from './ContactsList.module.css';
+import { ContactList } from './ContactsList.styled';
 import propTypes from 'prop-types';
 
 const ContactsList = ({ contacts, onDelete }) => {
   return (
-    <ul className={css.contacts__list}>
+    <ContactList>
       {contacts.map(contact => {
         const { id, name, number } = contact;
         return (
@@ -18,7 +18,7 @@ const ContactsList = ({ contacts, onDelete }) => {
           />
         );
       })}
-    </ul>
+    </ContactList>
   );
 };
 

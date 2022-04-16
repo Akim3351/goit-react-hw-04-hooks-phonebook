@@ -1,13 +1,13 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import css from './Filter.module.css';
+import { SearchLabel, SearchInput } from './Filter.styled';
 
 const Filter = ({ filter, onSearch }) => {
   return (
-    <label className={css.search__label}>
+    <SearchLabel>
       Find contacts by name
-      <input onChange={onSearch} type="text" value={filter} />
-    </label>
+      <SearchInput onChange={onSearch} type="text" value={filter} />
+    </SearchLabel>
   );
 };
 

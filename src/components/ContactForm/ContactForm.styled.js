@@ -1,12 +1,14 @@
-.input__form {
+import styled from '@emotion/styled';
+
+export const InputForm = styled.form`
   max-width: 600px;
   display: flex;
   flex-direction: column;
   padding: 10px;
   border: 1px solid gray;
-}
+`;
 
-.input__label {
+export const InputLabel = styled.label`
   padding: 0px;
   text-align: left;
   margin: 5px auto 5px 0px;
@@ -14,17 +16,17 @@
   font-size: 20;
   font-weight: 600;
   text-transform: capitalize;
-}
+`;
 
-.input__label input {
+export const Input = styled.input`
   display: block;
   height: 25px;
   width: 300px;
   font-size: 16;
   font-weight: 600;
-}
+`;
 
-.input__form button {
+export const Button = styled.button`
   height: 30px;
   width: 100px;
   border-radius: 5px;
@@ -34,9 +36,7 @@
   cursor: pointer;
   border: none;
   outline: none;
-}
-
-.input__form button:active {
+  :active {
   color: white;
   background-color: blue;
-}
+`;
