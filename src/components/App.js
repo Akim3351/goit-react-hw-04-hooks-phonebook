@@ -24,11 +24,10 @@ function App() {
     localStorage.setItem('contacts', JSON.stringify(contacts));
   }, [contacts]);
 
-  const onAddContact = (name, number) => {
+  const onAddContact = contact => {
     const newContact = {
       id: shortid.generate(),
-      name,
-      number,
+      ...contact,
     };
 
     const contactAllreadyExists = contacts.find(
