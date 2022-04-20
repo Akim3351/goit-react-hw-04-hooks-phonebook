@@ -18,7 +18,6 @@ function ContactForm({ onAddContact }) {
   const onFormSubmit = event => {
     event.preventDefault();
     onAddContact(contact);
-    console.log(contact);
     reset();
   };
 
